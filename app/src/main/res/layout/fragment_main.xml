@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlaceholderFragment">
+
+    <TextView
+        android:id="@+id/text_speed"
+        style="@style/Widget.VehiculoElectricoExperiment.TextView.Speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:text="30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
+    <ImageView
+        android:id="@+id/icon_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/ic_speed"
+        app:layout_constraintEnd_toStartOf="@id/text_kph"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@id/text_speed"
+        app:layout_constraintTop_toBottomOf="@id/text_speed" />
+
+    <TextView
+        android:id="@+id/text_kph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KPH"
+        app:layout_constraintBottom_toBottomOf="@id/icon_speed"
+        app:layout_constraintEnd_toEndOf="@id/text_speed"
+        app:layout_constraintStart_toEndOf="@id/icon_speed"
+        app:layout_constraintTop_toTopOf="@id/icon_speed" />
+
+    <TextView
+        android:id="@+id/text_charge"
+        style="@style/Widget.VehiculoElectricoExperiment.TextView.Headline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="90%"
+        app:layout_constraintEnd_toStartOf="@+id/text_temperature"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_speed" />
+
+    <TextView
+        android:id="@+id/text_temperature"
+        style="@style/Widget.VehiculoElectricoExperiment.TextView.Headline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="41°C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_charge"
+        app:layout_constraintTop_toBottomOf="@id/text_speed" />
+
+    <ImageView
+        android:id="@+id/icon_battery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
+        android:src="@drawable/ic_battery"
+        app:layout_constraintEnd_toStartOf="@id/text_charge_description"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@id/text_charge"
+        app:layout_constraintTop_toBottomOf="@id/text_charge" />
+
+    <ImageView
+        android:id="@+id/icon_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
+        android:src="@drawable/ic_temperature"
+        app:layout_constraintEnd_toStartOf="@id/text_temperature_description"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@id/text_temperature"
+        app:layout_constraintTop_toBottomOf="@id/text_temperature" />
+
+    <TextView
+        android:id="@+id/text_charge_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BATERIA"
+        app:layout_constraintBottom_toBottomOf="@id/icon_battery"
+        app:layout_constraintEnd_toEndOf="@id/text_charge"
+        app:layout_constraintStart_toEndOf="@id/icon_battery"
+        app:layout_constraintTop_toTopOf="@id/icon_battery" />
+
+    <TextView
+        android:id="@+id/text_temperature_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEMPERATURA"
+        app:layout_constraintBottom_toBottomOf="@id/icon_temperature"
+        app:layout_constraintEnd_toEndOf="@id/text_temperature"
+        app:layout_constraintStart_toEndOf="@id/icon_temperature"
+        app:layout_constraintTop_toTopOf="@id/icon_temperature" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

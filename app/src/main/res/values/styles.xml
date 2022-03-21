@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.VehiculoElectricoExperiment.TextView.Speed" parent="Widget.MaterialComponents.TextView">
+        <item name="android:minHeight">48dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAppearance">@style/TextAppearance.VehiculoElectricoExperiment.Speed</item>
+    </style>
+
+    <style name="Widget.VehiculoElectricoExperiment.TextView.Body" parent="Widget.MaterialComponents.TextView">
+        <item name="android:minHeight">48dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAppearance">?attr/textAppearanceSubtitle1</item>
+    </style>
+
+    <style name="Widget.VehiculoElectricoExperiment.TextView.Headline2" parent="Widget.MaterialComponents.TextView">
+        <item name="android:minHeight">48dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAppearance">?attr/textAppearanceHeadline2</item>
+    </style>
+    
+    <style name="TextAppearance.VehiculoElectricoExperiment.Speed" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="android:textSize">124sp</item>
+    </style>
+
+    <style name="Widget.VehiculoElectricoExperiment.Toolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="titleTextAppearance">@style/TextAppearance.VehiculoElectricoExperiment.Title</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+
+    <style name="TextAppearance.VehiculoElectricoExperiment.Title" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/rubik</item>
+        <item name="android:fontFamily">@font/rubik</item>
+    </style>
+</resources>

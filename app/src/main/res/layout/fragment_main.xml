@@ -5,7 +5,7 @@
     android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PlaceholderFragment">
+    tools:context=".CarFragment">
 
     <TextView
         android:id="@+id/text_speed"
@@ -106,5 +106,15 @@
         app:layout_constraintEnd_toEndOf="@id/text_temperature"
         app:layout_constraintStart_toEndOf="@id/icon_temperature"
         app:layout_constraintTop_toTopOf="@id/icon_temperature" />
+
+    <Button
+        android:id="@+id/scan_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escanear Dispositivos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/text_temperature_description"
+        app:layout_constraintStart_toStartOf="@id/icon_battery"
+        android:layout_marginBottom="30dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
